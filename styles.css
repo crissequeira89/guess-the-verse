@@ -40,7 +40,7 @@ body,
     display: none;
 }
 #points,
-p:last-child {
+.information {
     font-family: "Courier New", Courier, monospace;
     font-size: small;
     text-align: center;
