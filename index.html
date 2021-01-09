@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Guess the Verse</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="A quiz that helps you to memorize Bible verses.">
+    <meta name="keywords" content="video, game, javascript, guess, bible, verse, quiz, seventh, day, adventist">
+    <meta name="author" content="Cristiano Alexandre de Almeida Sequeira">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body onload="scrambleVerses()">
+    <div class="container">
+        <p id="points">
+            SCORE <span id="score">0</span> &vert; <span id="streak">0</span> STREAK
+        </p>
+        <p id="verse">&nbsp;</p>
+        <div class="option-container">
+            <div id="option1" class="option" onclick="playerChooses('option1')">
+                Option 1
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option2" class="option" onclick="playerChooses('option2')">
+                Option 2
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option3" class="option" onclick="playerChooses('option3')">
+                Option 3
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option4" class="option" onclick="playerChooses('option4')">
+                Option 4
+            </div>
+        </div>
+        <div class="next-container">
+            <div id="next" class="next" onclick="goToNextRound()">
+                NEXT
+            </div>
+        </div>
+        <p>
+            Tip: To get the most out of this tool, read the verse and the reference in full, even if you already &ldquo;know&rdquo; them.
+        </p>
+    </div>
+    <script type="text/javascript" src="functions.js"></script>
+</body>
+</html>

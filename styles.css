@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    overflow-y: scroll;
+}
+body,
+.container,
+.option-container,
+.option,
+#next {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    margin-left: -150px;
+    width: 300px;
+}
+.option-container,
+.next-container {
+    padding-bottom: 5px;
+    display: table;
+}
+.option,
+.next {
+    border: 2px solid #b8b8b8;
+    width: 296px;
+    height: 50px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    background-color: #d6d6d6;
+    cursor: pointer;
+}
+.next {
+    display: none;
+}
+#points,
+p:last-child {
+    font-family: "Courier New", Courier, monospace;
+    font-size: small;
+    text-align: center;
+}
+#verse {
+    text-align: center;
+}
+#next {
+    border: 2px solid #b8b8b8;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}

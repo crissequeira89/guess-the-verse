@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <title>Kur tas rakstīts?</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Viktorīna, kas palīdzēs iegaumēt Bībeles pantus.">
+    <meta name="keywords" content="dator, spēle, javascript, uzmini, bībele, pants, viktorīna, septītās, dienas, adventisti">
+    <meta name="author" content="Krišs Sekeiras">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+</head>
+<body onload="scrambleVerses()">
+    <div class="container">
+        <p id="points">
+            PUNKTI <span id="score">0</span> &vert; <span id="streak">0</span> SVĪTRA
+        </p>
+        <p id="verse">&nbsp;</p>
+        <div class="option-container">
+            <div id="option1" class="option" onclick="playerChooses('option1')">
+                1. variants
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option2" class="option" onclick="playerChooses('option2')">
+                2. variants
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option3" class="option" onclick="playerChooses('option3')">
+                3. variants
+            </div>
+        </div>
+        <div class="option-container">
+            <div id="option4" class="option" onclick="playerChooses('option4')">
+                4. variants
+            </div>
+        </div>
+        <div class="next-container">
+            <div id="next" class="next" onclick="goToNextRound()">
+                NĀKAMAIS
+            </div>
+        </div>
+        <p>
+            Padoms: lai iegūtu visvairāk no šī instrumenta, izlasi visu pantu un rakstu vietu, pat, ja to jau &ldquo;zini&rdquo;.
+        </p>
+    </div>
+    <script type="text/javascript" src="functions-lv.js"></script>
+</body>
+</html>
